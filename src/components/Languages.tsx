@@ -54,7 +54,8 @@ const Languages = () => {
 
       <div className="max-w-4xl mx-auto relative z-20">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-400 via-fuchsia-400 to-blue-400 bg-clip-text text-transparent mb-6 drop-shadow animate-fadeInUp flex items-center justify-center gap-2">
+         <h2 className="leading-tight md:leading-snug text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-400 via-fuchsia-400 to-blue-400 bg-clip-text text-transparent mb-8 drop-shadow animate-fadeInUp flex items-center justify-center gap-2">
+
             <Globe className="text-pink-500" size={38} /> Languages
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fadeInUp animation-delay-200">

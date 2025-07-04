@@ -65,9 +65,10 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto relative z-20">
         <div className="text-center mb-16">
           {/* Shimmer Heading */}
-          <motion.h2
-            className={`text-4xl md:text-5xl font-bold mb-6 ${shimmer}`}
-            initial={{ opacity: 0, y: 40 }}
+        <motion.h2
+  className={`leading-[1.3] text-4xl md:text-5xl font-bold mb-6 ${shimmer}`}
+
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, type: "spring" }}
           >
