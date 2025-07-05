@@ -15,16 +15,64 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50 overflow-x-hidden">
       <Header />
-      <AnimatedSection type="fadeUp"><Hero /></AnimatedSection>
-      <AnimatedSection type="fadeLeft"><About /></AnimatedSection>
-      <AnimatedSection type="zoomIn"><Experience /></AnimatedSection>
-    <ProjectsBento />
-      <AnimatedSection type="fadeUp"><Skills /></AnimatedSection>
-      <AnimatedSection type="rotate"><Education /></AnimatedSection>
-      <AnimatedSection type="fadeLeft"><Languages /></AnimatedSection>
-      <AnimatedSection type="zoomIn"><SoftSkills /></AnimatedSection>
-      <AnimatedSection type="fadeRight"><Extracurricular /></AnimatedSection>
-      <AnimatedSection type="fadeUp"><Contact /></AnimatedSection>
+
+      <AnimatedSection type="fadeUp">
+        <div id="hero">
+          <Hero />
+        </div>
+      </AnimatedSection>
+
+      <AnimatedSection type="fadeLeft">
+        <div id="about">
+          <About />
+        </div>
+      </AnimatedSection>
+
+      <AnimatedSection type="zoomIn">
+        <div id="experience">
+          <Experience />
+        </div>
+      </AnimatedSection>
+
+      <div id="projects">
+        <ProjectsBento />
+      </div>
+
+      <AnimatedSection type="fadeUp">
+        <div id="skills">
+          <Skills />
+        </div>
+      </AnimatedSection>
+
+      <AnimatedSection type="rotate">
+        <div id="education">
+          <Education />
+        </div>
+      </AnimatedSection>
+
+      <AnimatedSection type="fadeLeft">
+        <div id="languages">
+          <Languages />
+        </div>
+      </AnimatedSection>
+
+      <AnimatedSection type="zoomIn">
+        <div id="softskills">
+          <SoftSkills />
+        </div>
+      </AnimatedSection>
+
+      <AnimatedSection type="fadeRight">
+        <div id="extracurricular">
+          <Extracurricular />
+        </div>
+      </AnimatedSection>
+
+      <AnimatedSection type="fadeUp">
+        <div id="contact">
+          <Contact />
+        </div>
+      </AnimatedSection>
     </div>
   );
 }

@@ -13,7 +13,14 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = ['About', 'Experience', 'Projects', 'Skills', 'Education', 'Contact'];
+  const navItems = [
+    { label: 'About', path: '#about' },
+    { label: 'Experience', path: '#experience' },
+    { label: 'Projects', path: '#projects' },
+    { label: 'Skills', path: '#skills' },
+    { label: 'Education', path: '#education' },
+    { label: 'Contact', path: '#contact' },
+  ];
 
   return (
     <header
@@ -41,13 +48,13 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
+            {navItems.map(({ label, path }) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
+                key={label}
+                href={path}
                 className="text-gray-700 hover:text-pink-600 transition-all duration-300 font-medium relative group"
               >
-                {item}
+                {label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-rose-500 transition-all duration-300 group-hover:w-full rounded-full"></span>
               </a>
             ))}
@@ -66,14 +73,14 @@ const Header = () => {
         {/* Mobile Navigation Dropdown */}
         {isOpen && (
           <div className="md:hidden bg-white/90 backdrop-blur-lg rounded-b-xl shadow-inner py-4 border-t border-pink-100 space-y-2">
-            {navItems.map((item) => (
+            {navItems.map(({ label, path }) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
+                key={label}
+                href={path}
                 className="block text-center py-2 px-4 text-gray-700 hover:text-pink-600 hover:bg-pink-50 transition-all duration-300 rounded-md mx-4"
                 onClick={() => setIsOpen(false)}
               >
-                {item}
+                {label}
               </a>
             ))}
           </div>

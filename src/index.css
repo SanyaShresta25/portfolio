@@ -10,3 +10,6 @@
 .animation-delay-1000 { animation-delay: 1s !important; }
 .animation-delay-2000 { animation-delay: 2s !important; }
 .animation-delay-4000 { animation-delay: 4s !important; }
+html {
+  scroll-behavior: smooth;
+}
